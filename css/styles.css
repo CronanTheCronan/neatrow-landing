@@ -420,3 +420,39 @@ footer{
   /* If you add the menu, don’t hide all links, just hide the original ones */
   .nav-links a:not(.btn){ display:none; }
 }
+
+/* Keep pills from wrapping awkwardly */
+.pill{
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 10px;
+}
+
+/* Sharper CTA button rendering */
+.btn-primary{
+  transform: translateZ(0);              /* forces GPU layer, often fixes blur */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+/* Reduce overly soft shadow that can look fuzzy on some displays */
+.btn-primary{
+  box-shadow: 0 14px 36px rgba(124,92,255,.22);
+}
+
+/* Nav CTA: make it super crisp */
+.nav-cta{
+  background: rgba(233,237,247,.10);  /* solid-ish instead of gradient */
+  border: 1px solid rgba(233,237,247,.18);
+  color: var(--text);
+  box-shadow: none;
+}
+.nav-cta:hover{
+  background: rgba(233,237,247,.14);
+  border-color: rgba(233,237,247,.24);
+}
+
+nav{
+  backdrop-filter: saturate(150%) blur(8px);
+}
