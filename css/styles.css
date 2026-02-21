@@ -284,17 +284,21 @@ hr.sep{
   gap:14px;
 }
 @media (max-width: 920px){ .faq{grid-template-columns:1fr} }
-details{
+/* FAQ accordion only (prevents styling the nav menu <details>) */
+.faq details{
   border:1px solid var(--fainter);
   background: rgba(233,237,247,.04);
   border-radius: var(--radius);
   padding:14px 16px;
 }
-summary{
+.faq summary{
   cursor:pointer;
   font-weight:800;
 }
-details p{margin:10px 0 0; color:var(--muted)}
+.faq details p{
+  margin:10px 0 0;
+  color:var(--muted);
+}
 footer{
   padding:28px 0 50px;
   color:var(--muted);
@@ -416,9 +420,10 @@ footer{
 }
 
 @media (max-width: 720px){
-  .nav-menu{ display:block; }
-  /* If you add the menu, don’t hide all links, just hide the original ones */
-  .nav-links a:not(.btn){ display:none; }
+  /* Hide only direct child nav links (not dropdown links) */
+  .nav-links > a:not(.btn){
+    display:none;
+  }
 }
 
 /* Keep pills from wrapping awkwardly */
@@ -455,4 +460,14 @@ footer{
 
 nav{
   backdrop-filter: saturate(150%) blur(8px);
+}
+
+/* Nav menu should sit above the page content */
+.nav-menu{ z-index: 20; }
+.nav-menu-pop{ z-index: 30; }
+
+/* Make the summary button look like a normal button */
+.nav-menu summary.btn{
+  border: 1px solid var(--faint);
+  background: rgba(233,237,247,.06);
 }

@@ -302,6 +302,14 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Close mobile menu after selecting an item
+    const navMenu = document.querySelector('.nav-menu');
+    document.querySelectorAll('.nav-menu-pop a').forEach(a => {
+      a.addEventListener('click', () => {
+        if (navMenu) navMenu.removeAttribute('open');
+      });
+    });
   </script>
 </body>
 
