@@ -318,3 +318,105 @@ footer{
   border: 1px solid var(--fainter);
   color: var(--muted);
 }
+
+/* --- Mobile polish --- */
+@media (max-width: 720px){
+  /* Nav: keep it clean */
+  .nav-inner{
+    gap: 10px;
+  }
+  .nav-links{
+    gap: 8px;
+  }
+  /* Hide the text links on small screens (keep primary CTA) */
+  .nav-links a:not(.btn){
+    display:none;
+  }
+
+  /* Hero: reduce padding + font size */
+  .hero{ padding: 46px 0 18px; }
+  h1{ font-size: 40px; }
+  .lead{ font-size: 16px; }
+
+  /* CTA buttons: stack + full width */
+  .cta-row{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-row .btn{
+    width: 100%;
+  }
+
+  /* Mini benefit pills: allow wrap, reduce padding */
+  .mini{
+    gap: 10px;
+  }
+  .mini span{
+    padding: 6px 9px;
+  }
+
+  /* Cards: a bit tighter */
+  .card, .step, .price-card, .panel-inner{
+    padding: 16px;
+  }
+
+  /* Pricing: prevent “card cramp” */
+  .price{
+    font-size: 30px;
+  }
+
+  /* FAQ: ensure details look nice */
+  details{
+    padding: 12px 14px;
+  }
+
+  /* Footer: stack nicely */
+  .footer-grid{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Slightly larger phones/tablets */
+@media (max-width: 920px){
+  /* Make the sticky nav less tall on mobile */
+  .nav-links a{ padding: 7px 9px; }
+  .btn-small{ padding: 9px 11px; }
+}
+
+/* Mobile menu */
+.nav-menu{ display:none; position:relative; }
+.nav-menu summary{ list-style:none; }
+.nav-menu summary::-webkit-details-marker{ display:none; }
+
+.nav-menu-pop{
+  position:absolute;
+  right:0;
+  top: 46px;
+  min-width: 180px;
+  background: rgba(15,23,51,.98);
+  border: 1px solid rgba(233,237,247,.12);
+  border-radius: 14px;
+  box-shadow: 0 18px 55px rgba(0,0,0,.45);
+  padding: 8px;
+  display:flex;
+  flex-direction:column;
+  gap: 4px;
+}
+.nav-menu-pop a{
+  display:block;
+  padding: 10px 10px;
+  border-radius: 12px;
+  text-decoration:none;
+  color: var(--muted);
+}
+.nav-menu-pop a:hover{
+  background: rgba(233,237,247,.08);
+  color: var(--text);
+}
+
+@media (max-width: 720px){
+  .nav-menu{ display:block; }
+  /* If you add the menu, don’t hide all links, just hide the original ones */
+  .nav-links a:not(.btn){ display:none; }
+}

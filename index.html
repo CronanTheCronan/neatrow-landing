@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NeatRow | Reliable Shopify Exports</title>
-  <meta name="description" content="NeatRow turns Shopify exports into an ops pipeline: templates, scheduled runs, delivery logs, and schema drift visibility." />
+  <meta name="description"
+    content="NeatRow turns Shopify exports into an ops pipeline: templates, scheduled runs, delivery logs, and schema drift visibility." />
   <meta property="og:title" content="NeatRow | Reliable Shopify Exports" />
-  <meta property="og:description" content="Templates, runs, deliveries, and drift visibility so your pipelines don’t snap." />
+  <meta property="og:description"
+    content="Templates, runs, deliveries, and drift visibility so your pipelines don’t snap." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <nav>
     <div class="container nav-inner">
@@ -21,10 +25,15 @@
         </span>
       </a>
       <div class="nav-links">
-        <a href="#how">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
+        <details class="nav-menu">
+          <summary class="btn btn-small">Menu</summary>
+          <div class="nav-menu-pop">
+            <a href="#how">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </details>
         <a class="btn btn-small btn-primary" href="#coming-soon">Coming Soon</a>
       </div>
     </div>
@@ -37,7 +46,8 @@
           <span class="kicker"><span class="k-dot"></span> Export Ops + Reliability for Shopify</span>
           <h1>Reliable Shopify exports that don’t silently break.</h1>
           <p class="lead">
-            NeatRow turns exports into a pipeline: templates, scheduled runs, delivery tracking, and schema drift visibility,
+            NeatRow turns exports into a pipeline: templates, scheduled runs, delivery tracking, and schema drift
+            visibility,
             so your sheets, warehouses, and automations stay sane.
           </p>
 
@@ -219,7 +229,8 @@
       <div class="faq">
         <details>
           <summary>What can NeatRow export?</summary>
-          <p>Orders, products, customers, and other resources supported by your templates. The app focuses on repeatable template-driven exports.</p>
+          <p>Orders, products, customers, and other resources supported by your templates. The app focuses on repeatable
+            template-driven exports.</p>
         </details>
         <details>
           <summary>Can I schedule exports?</summary>
@@ -227,11 +238,13 @@
         </details>
         <details>
           <summary>What is “schema drift”?</summary>
-          <p>It’s when your export columns/structure changes over time. NeatRow detects drift so downstream spreadsheets and automations don’t break silently.</p>
+          <p>It’s when your export columns/structure changes over time. NeatRow detects drift so downstream spreadsheets
+            and automations don’t break silently.</p>
         </details>
         <details>
           <summary>Do you store my data?</summary>
-          <p>NeatRow stores export run history and artifacts based on your retention tier. You can review the Privacy Policy for details.</p>
+          <p>NeatRow stores export run history and artifacts based on your retention tier. You can review the Privacy
+            Policy for details.</p>
         </details>
         <details>
           <summary>What if a delivery fails?</summary>
@@ -291,4 +304,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
