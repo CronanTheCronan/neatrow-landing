@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NeatRow | Privacy Policy</title>
+  <title>NeatRow Exports | Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for NeatRow Exports by Solace Signal Labs." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -12,50 +13,91 @@
       <a class="brand" href="index.html">
         <span class="brand-badge" aria-hidden="true"></span>
         <span>
-          <div class="brand-name">NeatRow</div>
+          <div class="brand-name">NeatRow Exports</div>
           <div class="brand-sub">Privacy Policy</div>
         </span>
       </a>
       <div class="nav-links">
-        <a class="btn btn-small" href="index.html">Back</a>
+        <a class="btn btn-small" href="index.html">← Back to Home</a>
       </div>
     </div>
   </nav>
 
-  <main class="container section">
+  <main class="container section" style="max-width: 780px;">
     <h2>Privacy Policy</h2>
-    <p class="sub">Last updated: <b>REPLACE_DATE</b></p>
+    <p class="sub">Last updated: <b>June 3, 2026</b> · NeatRow Exports by Solace Signal Labs</p>
 
     <div class="card">
-      <h3>What we collect</h3>
-      <p>
-        NeatRow may collect information necessary to operate the app, such as store identifiers, app configuration,
-        and export run metadata. If you enable destinations, we store the minimum configuration needed to deliver exports.
+      <h3>1. What We Collect</h3>
+      <p style="margin-top:8px;">
+        NeatRow Exports collects and stores only the operational data necessary to generate and deliver your order exports:
+      </p>
+      <ul class="ul">
+        <li><strong>Order metadata:</strong> Order ID, display order name, creation timestamp, processing timestamp, financial status, fulfillment status, currency, financial totals (subtotal, discounts, tax, shipping, total price), line item aggregates (counts, SKUs, titles, quantities), tags, shipping destination (country, province, city), and referring site URL.</li>
+        <li><strong>Shopify OAuth session tokens:</strong> Securely stored in our database, strictly scoped per store, for API authorization.</li>
+        <li><strong>Export templates & run history:</strong> Template names, run timestamps, status, row counts, and temporary file keys.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h3>2. What We Do NOT Collect</h3>
+      <p style="margin-top:8px;">
+        NeatRow Exports is designed privacy-first:
+      </p>
+      <ul class="ul">
+        <li><strong>Customer Personal Information (PII):</strong> We do not request the <code>read_customers</code> scope. Customer names, customer emails, and customer IDs are exported as blank strings.</li>
+        <li><strong>Payment Details:</strong> We never access or store credit cards, bank accounts, or billing credentials.</li>
+        <li><strong>Data Selling:</strong> We never sell, monetize, or share merchant or customer data with third parties.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h3>3. Cloud Storage & File Retention</h3>
+      <p style="margin-top:8px;">
+        Generated CSV export files are stored in Cloudflare R2 object storage. Files are accessible exclusively through temporary, time-limited signed URLs and are <strong>automatically deleted after 14 days</strong>.
+      </p>
+      <p style="margin-top:8px;">
+        Export run metadata (row counts and timestamps) is retained until you delete the template or uninstall the app.
       </p>
     </div>
 
     <div class="card" style="margin-top:14px;">
-      <h3>Export artifacts and retention</h3>
-      <p>
-        NeatRow stores export run history and (optionally) export artifacts for a retention period based on your plan tier.
-        You can request deletion by contacting support.
+      <h3>4. GDPR & Data Deletion Compliance</h3>
+      <p style="margin-top:8px;">
+        NeatRow Exports is fully compliant with Shopify's mandatory GDPR webhooks:
       </p>
+      <ul class="ul">
+        <li><strong>app/uninstalled:</strong> Stored store OAuth sessions are wiped immediately upon app uninstallation.</li>
+        <li><strong>customers/data_request:</strong> Acknowledged HTTP 200 OK (no customer PII is stored).</li>
+        <li><strong>customers/redact:</strong> Acknowledged HTTP 200 OK (no customer PII is stored).</li>
+        <li><strong>shop/redact:</strong> All store records, templates, run logs, and associated files are purged within 48 hours.</li>
+      </ul>
     </div>
 
     <div class="card" style="margin-top:14px;">
-      <h3>How we use data</h3>
-      <p>
-        We use collected data to provide exports, scheduling, delivery tracking, diagnostics, and support.
-        We do not sell your data.
+      <h3>5. Contact & Support</h3>
+      <p style="margin-top:8px;">
+        If you have questions about this Privacy Policy or wish to request data deletion, please contact us:
       </p>
-    </div>
-
-    <div class="card" style="margin-top:14px;">
-      <h3>Contact</h3>
-      <p>
-        Questions? Email <a href="mailto:support@YOURDOMAIN.com">support@YOURDOMAIN.com</a>.
+      <p style="margin-top:8px;">
+        Email: <a href="mailto:matt@solacesignallabs.com" style="color:var(--accent2); text-decoration:underline;">matt@solacesignallabs.com</a> or <a href="mailto:privacy@neatrow.com" style="color:var(--accent2); text-decoration:underline;">privacy@neatrow.com</a>
+        <br />
+        Website: <a href="https://solacesignallabs.com" target="_blank" rel="noreferrer" style="color:var(--accent2); text-decoration:underline;">solacesignallabs.com</a>
       </p>
     </div>
   </main>
+
+  <footer>
+    <div class="footer-grid container" style="max-width:780px;">
+      <div>© <span id="year"></span> Solace Signal Labs. All rights reserved.</div>
+      <div>
+        <a href="index.html">Home</a> · <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

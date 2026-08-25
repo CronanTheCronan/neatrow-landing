@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NeatRow | Terms</title>
+  <title>NeatRow Exports | Terms of Service</title>
+  <meta name="description" content="Terms of Service for NeatRow Exports by Solace Signal Labs." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -12,50 +13,78 @@
       <a class="brand" href="index.html">
         <span class="brand-badge" aria-hidden="true"></span>
         <span>
-          <div class="brand-name">NeatRow</div>
-          <div class="brand-sub">Terms</div>
+          <div class="brand-name">NeatRow Exports</div>
+          <div class="brand-sub">Terms of Service</div>
         </span>
       </a>
       <div class="nav-links">
-        <a class="btn btn-small" href="index.html">Back</a>
+        <a class="btn btn-small" href="index.html">← Back to Home</a>
       </div>
     </div>
   </nav>
 
-  <main class="container section">
+  <main class="container section" style="max-width: 780px;">
     <h2>Terms of Service</h2>
-    <p class="sub">Last updated: <b>REPLACE_DATE</b></p>
+    <p class="sub">Last updated: <b>June 3, 2026</b> · Solace Signal Labs</p>
 
     <div class="card">
-      <h3>Service</h3>
-      <p>
-        NeatRow provides export templates, export runs, and delivery features for Shopify merchants. Features and limits
-        vary by plan tier and may change over time.
+      <h3>1. Service Agreement</h3>
+      <p style="margin-top:8px;">
+        NeatRow Exports is an embedded Shopify application provided by Solace Signal Labs. By installing or using NeatRow Exports, you agree to these Terms of Service.
       </p>
     </div>
 
     <div class="card" style="margin-top:14px;">
-      <h3>Acceptable use</h3>
-      <p>
-        You agree not to misuse the service, attempt to access data that is not yours, or use NeatRow in ways that violate
-        Shopify policies or applicable laws.
+      <h3>2. Free Plan & Service Availability</h3>
+      <p style="margin-top:8px;">
+        NeatRow Exports is currently provided as a 100% free app on the Shopify App Store. While we strive for 99.9% uptime and reliable performance, the service is provided on an “as-is” and “as-available” basis. We reserve the right to modify service limits, features, or storage policies with reasonable notice.
       </p>
     </div>
 
     <div class="card" style="margin-top:14px;">
-      <h3>Support</h3>
-      <p>
-        Support is provided via email at <a href="mailto:support@YOURDOMAIN.com">support@YOURDOMAIN.com</a>.
+      <h3>3. Acceptable Use</h3>
+      <p style="margin-top:8px;">
+        You agree to use NeatRow Exports solely for legitimate store reporting and operational purposes. You agree not to attempt to reverse engineer the application, bypass API rate limits, access unauthorized merchant data, or use the service in violation of Shopify Partner or Merchant policies.
       </p>
     </div>
 
     <div class="card" style="margin-top:14px;">
-      <h3>Liability</h3>
-      <p>
-        NeatRow is provided “as-is” without warranties. To the extent permitted by law, we are not liable for indirect or
-        consequential damages.
+      <h3>4. Data Storage & File Lifespan</h3>
+      <p style="margin-top:8px;">
+        Export CSV files are stored temporarily in cloud object storage for up to 14 days following generation. Solace Signal Labs is not an archival cold-storage service; you are responsible for downloading and archiving your exported files.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h3>5. Limitation of Liability</h3>
+      <p style="margin-top:8px;">
+        To the maximum extent permitted by applicable law, Solace Signal Labs shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your access to or inability to access the service or exported files.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h3>6. Contact Information</h3>
+      <p style="margin-top:8px;">
+        For questions or legal inquiries, please contact:
+        <br />
+        <a href="mailto:matt@solacesignallabs.com" style="color:var(--accent2); text-decoration:underline;">matt@solacesignallabs.com</a>
+        <br />
+        <a href="https://solacesignallabs.com" target="_blank" rel="noreferrer" style="color:var(--accent2); text-decoration:underline;">solacesignallabs.com</a>
       </p>
     </div>
   </main>
+
+  <footer>
+    <div class="footer-grid container" style="max-width:780px;">
+      <div>© <span id="year"></span> Solace Signal Labs. All rights reserved.</div>
+      <div>
+        <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

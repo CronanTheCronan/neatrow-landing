@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NeatRow | Reliable Shopify Exports</title>
+  <title>NeatRow Exports | Clean Shopify Order CSVs</title>
   <meta name="description"
-    content="NeatRow turns Shopify exports into an ops pipeline: templates, scheduled runs, delivery logs, and schema drift visibility." />
-  <meta property="og:title" content="NeatRow | Reliable Shopify Exports" />
+    content="NeatRow Exports is a Shopify app that delivers clean, flat CSV exports of your orders and line items in one click. 100% Free, privacy-first, and Excel-ready." />
+  <meta property="og:title" content="NeatRow Exports | Clean Shopify Order CSVs" />
   <meta property="og:description"
-    content="Templates, runs, deliveries, and drift visibility so your pipelines don’t snap." />
+    content="One row per order, reusable templates, Excel UTF-8 BOM encoding, and secure cloud downloads for Shopify." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -17,11 +17,11 @@
 <body>
   <nav>
     <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="NeatRow Home">
+      <a class="brand" href="#top" aria-label="NeatRow Exports Home">
         <span class="brand-badge" aria-hidden="true"></span>
         <span>
-          <div class="brand-name">NeatRow</div>
-          <div class="brand-sub">Shopify exports, but operational</div>
+          <div class="brand-name">NeatRow Exports</div>
+          <div class="brand-sub">by Solace Signal Labs</div>
         </span>
       </a>
       <div class="nav-links">
@@ -32,9 +32,14 @@
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
             <a href="#faq">FAQ</a>
+            <a href="https://solacesignallabs.com/neatrow" target="_blank" rel="noreferrer">Studio Details</a>
           </div>
         </details>
-        <a class="btn btn-small btn-primary nav-cta" href="#coming-soon">Coming Soon</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small btn-primary nav-cta" href="https://neat-row-exports-production.up.railway.app" target="_blank" rel="noreferrer">Install Free</a>
       </div>
     </div>
   </nav>
@@ -43,59 +48,60 @@
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <span class="kicker"><span class="k-dot"></span> Export Ops + Reliability for Shopify</span>
-          <h1>Reliable Shopify exports that don’t silently break.</h1>
+          <span class="kicker"><span class="k-dot"></span> Shopify App · 100% Free at Launch</span>
+          <h1>Clean, one-click CSV order & line-item exports for Shopify.</h1>
           <p class="lead">
-            NeatRow turns exports into a pipeline: templates, scheduled runs, delivery tracking, and schema drift
-            visibility,
-            so your sheets, warehouses, and automations stay sane.
+            NeatRow Exports turns messy Shopify order data into clean, spreadsheet-ready CSVs.
+            Strictly one row per order, aggregated line items, zero pivot tables, and UTF-8 BOM encoding so Microsoft Excel and Google Sheets never break.
           </p>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="#coming-soon">Coming Soon</a>
+            <a class="btn btn-primary" href="https://neat-row-exports-production.up.railway.app" target="_blank" rel="noreferrer">Install on Shopify</a>
             <a class="btn" href="#how">See how it works</a>
+            <a class="btn" href="https://solacesignallabs.com/neatrow" target="_blank" rel="noreferrer">Solace Signal Labs →</a>
           </div>
 
           <div class="mini" aria-label="Key benefits">
-            <span><span class="check">✓</span> Run history + artifacts</span>
-            <span><span class="check">✓</span> Delivery health visibility</span>
-            <span><span class="check">✓</span> Drift detection for pipelines</span>
+            <span><span class="check">✓</span> 1-Row Per Order Schema</span>
+            <span><span class="check">✓</span> UTF-8 BOM for Excel</span>
+            <span><span class="check">✓</span> Cloudflare R2 Signed URLs</span>
+            <span><span class="check">✓</span> Strictly `read_orders` Scope</span>
           </div>
         </div>
 
         <aside class="panel" aria-label="What you get">
           <div class="panel-inner">
             <div class="price-top">
-              <h3 style="margin:0;">Export pipeline, not export panic</h3>
-              <span class="pill">Built for ops teams</span>
+              <h3 style="margin:0;">1 Row per Order, Zero Clutter</h3>
+              <span class="pill">Free at launch</span>
             </div>
-            <p>Build once. Run forever. When things change, you see it, fix it, and move on with your life.</p>
+            <p style="margin-top:8px;">Configure once. Save templates. Export up to 365 days of order history into clean, uncorrupted spreadsheets.</p>
 
             <div class="stat-grid" role="list">
               <div class="stat" role="listitem">
-                <b>Templates</b>
-                <small>Reusable export recipes</small>
+                <b>1 Row / Order</b>
+                <small>Clean line item aggregates</small>
               </div>
               <div class="stat" role="listitem">
-                <b>Runs</b>
-                <small>Tracked executions</small>
+                <b>24 Columns</b>
+                <small>Financial, tax, shipping, tags</small>
               </div>
               <div class="stat" role="listitem">
-                <b>Deliveries</b>
-                <small>Success, failures, retries</small>
+                <b>Cloud R2</b>
+                <small>Expiring signed download URLs</small>
               </div>
               <div class="stat" role="listitem">
-                <b>Schema drift</b>
-                <small>Detect what changed</small>
+                <b>100% Free</b>
+                <small>Full functionality out of the box</small>
               </div>
             </div>
 
             <hr class="sep" />
 
             <p style="margin:0;">
-              Want early access?
+              Built and maintained by <b>Solace Signal Labs</b>.
               <br />
-              <a href="#coming-soon">Coming soon details</a>
+              <a href="https://solacesignallabs.com" target="_blank" rel="noreferrer">Visit solacesignallabs.com →</a>
             </p>
           </div>
         </aside>
@@ -104,197 +110,144 @@
 
     <section class="section" id="how">
       <h2>How it works</h2>
-      <p class="sub">A simple loop that makes exports predictable and debuggable.</p>
+      <p class="sub">A clean, 3-step loop that makes Shopify order exporting predictable and reliable.</p>
 
       <div class="steps">
         <div class="step">
           <div class="num">1</div>
-          <b>Create a Template</b>
-          <p>Choose resource + fields. Set formatting once. Save it as a reusable recipe.</p>
+          <b>Install & Connect</b>
+          <p>Authorize with your Shopify store. NeatRow requests strictly the <code>read_orders</code> permission and never collects customer PII.</p>
         </div>
         <div class="step">
           <div class="num">2</div>
-          <b>Run or Schedule</b>
-          <p>One-click exports or scheduled runs. Every execution becomes a traceable record.</p>
+          <b>Create Export Templates</b>
+          <p>Create named export templates tailored for your fulfillment partners, accounting team, or monthly audit reports.</p>
         </div>
         <div class="step">
           <div class="num">3</div>
-          <b>Deliver + Monitor</b>
-          <p>Download or deliver to a destination. See delivery health and drift signals.</p>
+          <b>Run & Download</b>
+          <p>1-click execution generates a clean CSV uploaded to secure Cloudflare R2 storage with instant signed download links.</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="features">
-      <h2>What makes NeatRow different</h2>
+      <h2>What makes NeatRow Exports different</h2>
       <p class="sub">
-        Most export apps focus on “can I get the file.” NeatRow focuses on “can I trust the pipeline.”
+        Default Shopify admin exports duplicate rows for every line item, corrupting sums and requiring spreadsheet surgery. NeatRow delivers clean data on day one.
       </p>
 
       <div class="grid-3">
         <div class="card">
-          <div class="icon">🧾</div>
-          <h3>Run History + Artifacts</h3>
-          <p>Every export has a record, outputs, timestamps, and context for audits or debugging.</p>
+          <div class="icon">⚡</div>
+          <h3>One-Click Order Exports</h3>
+          <p>Fetch order history with financial totals, SKUs, line item titles, quantities, discounts, and shipping details in a single click.</p>
         </div>
         <div class="card">
-          <div class="icon">🛰️</div>
-          <h3>Delivery Health</h3>
-          <p>Know when a delivery fails and why. Stop discovering broken automations “next Tuesday.”</p>
+          <div class="icon">📑</div>
+          <h3>Custom Reusable Templates</h3>
+          <p>Configure export recipes once, name your template, and run fresh exports whenever your team needs them.</p>
         </div>
         <div class="card">
-          <div class="icon">🧬</div>
-          <h3>Schema Drift Visibility</h3>
-          <p>Detect changes in exported structure. Ops tier unlocks drift diffs for faster fixes.</p>
+          <div class="icon">📊</div>
+          <h3>Excel & Sheets Ready</h3>
+          <p>Formatted with UTF-8 BOM encoding so foreign currency symbols, accents, and alphanumeric SKUs open cleanly in Excel without garbled text.</p>
         </div>
         <div class="card">
-          <div class="icon">🧰</div>
-          <h3>Diagnostics Bundle</h3>
-          <p>Generate a support-ready diagnostic snapshot so troubleshooting isn’t a 14-email chain.</p>
+          <div class="icon">☁️</div>
+          <h3>Cloud Storage & Signed URLs</h3>
+          <p>Exports are stored securely in Cloudflare R2 object storage and downloaded via temporary, time-limited signed URLs (14-day auto-expiry).</p>
         </div>
         <div class="card">
-          <div class="icon">🧠</div>
-          <h3>Templates from Use Cases</h3>
-          <p>Start from common workflows: finance exports, fulfillment feeds, warehouse sync, and more.</p>
+          <div class="icon">🛡️</div>
+          <h3>Built for Speed & Privacy</h3>
+          <p>Strictly scoped to <code>read_orders</code>. Zero customer PII collected or sold. Full GDPR shop/redact webhook compliance built in.</p>
         </div>
         <div class="card">
-          <div class="icon">⚙️</div>
-          <h3>Built for Speed</h3>
-          <p>Fast setup, predictable operations, and clear gates that scale with how you use it.</p>
+          <div class="icon">🕒</div>
+          <h3>Run History & Status</h3>
+          <p>Track previous export executions, row counts, and re-download previous CSV files anytime during the retention window.</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="pricing">
-      <h2>Simple pricing</h2>
-      <p class="sub">Three tiers. Clear upgrades. No weird math.</p>
+      <h2>Simple, honest pricing</h2>
+      <p class="sub">NeatRow Exports is 100% free at launch. Full functionality with zero paywalls.</p>
 
-      <div class="pricing">
-        <div class="price-card">
-          <div class="price-top">
-            <div class="price-title">Starter</div>
-            <span class="pill">Get exports out</span>
-          </div>
-          <div class="price">$15 <span class="per">/ month</span></div>
-          <ul class="ul">
-            <li>Core template exports</li>
-            <li>Basic destinations</li>
-            <li>Standard retention</li>
-            <li>Perfect for small shops</li>
-          </ul>
-          <div class="smallnote">Limits shown in-app based on your plan.</div>
-        </div>
-
+      <div class="pricing" style="grid-template-columns: 1fr; max-width: 620px; margin: 0 auto;">
         <div class="price-card featured">
           <div class="price-top">
-            <div class="price-title">Pro</div>
-            <span class="pill">Automate & transform</span>
+            <div class="price-title">NeatRow Exports — Free Plan</div>
+            <span class="pill">Shopify App Store</span>
           </div>
-          <div class="price">$35 <span class="per">/ month</span></div>
+          <div class="price">$0 <span class="per">/ month</span></div>
           <ul class="ul">
-            <li>Scheduling</li>
-            <li>Higher limits</li>
-            <li>More destinations</li>
-            <li>Longer retention</li>
+            <li><strong>1 row per order</strong> flat CSV schema</li>
+            <li><strong>Reusable templates:</strong> Configure once, run anytime</li>
+            <li><strong>Excel & Google Sheets ready:</strong> UTF-8 BOM encoding</li>
+            <li><strong>Cloud delivery:</strong> Cloudflare R2 storage with secure signed URLs</li>
+            <li><strong>14-day retention:</strong> Access run history and re-download past files</li>
+            <li><strong>Privacy-first:</strong> Strictly <code>read_orders</code> scope, zero customer PII stored</li>
           </ul>
-          <div class="smallnote">Best for weekly ops workflows.</div>
-        </div>
-
-        <div class="price-card">
-          <div class="price-top">
-            <div class="price-title">Ops</div>
-            <span class="pill">Reliability suite</span>
+          <div class="smallnote">No credit card required. Full functionality included out of the box.</div>
+          <div class="cta-row" style="margin-top:18px;">
+            <a class="btn btn-primary" href="https://neat-row-exports-production.up.railway.app" target="_blank" rel="noreferrer" style="width:100%;">Install on Shopify</a>
           </div>
-          <div class="price">$75 <span class="per">/ month</span></div>
-          <ul class="ul">
-            <li>Schema drift diffs</li>
-            <li>Advanced diagnostics</li>
-            <li>Delivery retries/visibility</li>
-            <li>Longest retention</li>
-          </ul>
-          <div class="smallnote">For teams who hate surprises.</div>
         </div>
-      </div>
-
-      <div class="cta-row" style="margin-top:18px;">
-        <a class="btn btn-primary" href="#coming-soon">Coming Soon</a>
-        <a class="btn" href="#coming-soon">Contact (Coming Soon)</a>
       </div>
     </section>
 
     <section class="section" id="faq">
       <h2>FAQ</h2>
-      <p class="sub">Quick answers for the questions merchants ask right before they install.</p>
+      <p class="sub">Quick answers to common questions about NeatRow Exports.</p>
 
       <div class="faq">
         <details>
-          <summary>What can NeatRow export?</summary>
-          <p>Orders, products, customers, and other resources supported by your templates. The app focuses on repeatable
-            template-driven exports.</p>
+          <summary>How does 1 row per order work for multi-item orders?</summary>
+          <p>NeatRow aggregates line item SKUs, titles, and quantities into pipe-delimited columns (e.g. <code>SKU-A | SKU-B</code>). This ensures order total prices and taxes never duplicate, making spreadsheet sums and accounting formulas 100% accurate.</p>
         </details>
         <details>
-          <summary>Can I schedule exports?</summary>
-          <p>Yes. Scheduling is included in Pro and Ops.</p>
+          <summary>Will special characters and SKUs open properly in Microsoft Excel?</summary>
+          <p>Yes. NeatRow Exports includes a UTF-8 Byte Order Mark (BOM) on all exported files, preventing Excel from garbling foreign accents, currency symbols, and alphanumeric SKUs.</p>
         </details>
         <details>
-          <summary>What is “schema drift”?</summary>
-          <p>It’s when your export columns/structure changes over time. NeatRow detects drift so downstream spreadsheets
-            and automations don’t break silently.</p>
+          <summary>Do you store customer personal information (PII)?</summary>
+          <p>No. NeatRow Exports requests strictly the <code>read_orders</code> scope and does not access or store customer names, emails, or phone numbers. Customer ID and email columns are exported as blank strings.</p>
         </details>
         <details>
-          <summary>Do you store my data?</summary>
-          <p>NeatRow stores export run history and artifacts based on your retention tier. You can review the Privacy
-            Policy for details.</p>
+          <summary>How long are export files kept?</summary>
+          <p>Export CSV files are stored in Cloudflare R2 and are automatically deleted after 14 days. Metadata (run history row counts and timestamps) is kept until you delete the template or uninstall the app.</p>
         </details>
         <details>
-          <summary>What if a delivery fails?</summary>
-          <p>You’ll see delivery outcomes in run history. Ops adds deeper diagnostics and reliability tools.</p>
+          <summary>What happens if I uninstall the app?</summary>
+          <p>Upon uninstall, store sessions are deleted immediately. All remaining store data and templates are deleted within 48 hours in compliance with Shopify's mandatory GDPR shop/redact webhook.</p>
         </details>
         <details>
-          <summary>How do I get help?</summary>
-          <p>We’ll post support contact details at launch. For now, check the Coming Soon section below.</p>
+          <summary>Who built NeatRow Exports?</summary>
+          <p>NeatRow Exports is developed and operated by <b>Solace Signal Labs</b> (<a href="https://solacesignallabs.com" target="_blank" rel="noreferrer">solacesignallabs.com</a>), an indie studio building game development rails and production tooling.</p>
         </details>
-      </div>
-    </section>
-
-    <section class="section" id="coming-soon">
-      <div class="panel">
-        <div class="panel-inner">
-          <div class="price-top">
-            <h3 style="margin:0;">Coming Soon</h3>
-            <span class="pill">Launch-ready placeholder</span>
-          </div>
-          <p style="color:var(--muted); margin-top:8px;">
-            NeatRow is in pre-launch while we finish App Store review and polish.
-            This page is live so the domain, SEO, and messaging are ready.
-          </p>
-
-          <hr class="sep" />
-
-          <p style="margin:0; color:var(--muted);">
-            Want early access?
-            <br />
-            <span class="kbd">Email + App Store link will appear here on launch day.</span>
-          </p>
-        </div>
       </div>
     </section>
 
     <footer>
       <div class="footer-grid container">
         <div>
-          <div style="font-weight:800; color:var(--text)">NeatRow</div>
-          <div>© <span id="year"></span> MergeRight Labs</div>
+          <div style="font-weight:800; color:var(--text)">NeatRow Exports</div>
+          <div style="font-size:13px; color:var(--muted); margin-top:3px;">
+            © <span id="year"></span> <a href="https://solacesignallabs.com" target="_blank" rel="noreferrer" style="color:var(--text); text-decoration:underline;">Solace Signal Labs</a>. All rights reserved.
+          </div>
           <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
-            <span class="kbd">Starter</span>
-            <span class="kbd">Pro</span>
-            <span class="kbd">Ops</span>
+            <span class="kbd">Shopify App</span>
+            <span class="kbd">100% Free</span>
+            <span class="kbd">GDPR Compliant</span>
           </div>
         </div>
         <div style="display:flex; gap:14px; align-items:flex-start; flex-wrap:wrap;">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="#coming-soon">Support (Coming Soon)</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="https://solacesignallabs.com/neatrow" target="_blank" rel="noreferrer">Studio Overview</a>
+          <a href="mailto:matt@solacesignallabs.com">Support</a>
         </div>
       </div>
     </footer>
